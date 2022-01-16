@@ -1,5 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400;600;800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-    background-color: rosybrown;
+}
+
+:root {
+    --brown: #603822;
+    --brown-hover: #a57155;
+}
+
+body {
+    min-height: 200vh;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    position: fixed;
+}
+
+header .max-width {
+    max-width: 1280px;
+    height: 138px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+header nav img {
+    height: 100px; 
+}
+
+header nav img:hover {
+    filter: brightness(107%);
+    transition: filter 0.25s;
+}
+
+header nav a {
+    text-decoration: none;
+    font-family: 'Ruda', sans-serif;
+    color: var(--brown);
+    font-size: 22px;
+    margin-right: 45px;
+}
+
+header nav a:hover {
+    color: var(--brown-hover);
+    transition: color 0.25s;
+}
+
+.user {
+    display: flex;
+}
+
+.user img {
+    width: 40px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.user img:hover {
+    filter: brightness(117%);
+    transition: filter 0.25s;
+}
+/* HEADER */
+
+
+
+/* MAIN */
+main {
+    padding-top: 138px;
 }
