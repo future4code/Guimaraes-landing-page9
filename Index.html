@@ -10,7 +10,9 @@
 <body>
     <header>
         <div class="max-width">
-            <nav>
+            <img src="./images/mobile-nav.png" alt="Mobile nav" id="mobile-nav" class="mobile">
+            <img src="./images/logo.png" alt="Logo" class="mobile" id="mobile-logo">
+            <nav class="desktop">
                 <a href="./Index.html">
                     <img src="./images/logo.png" alt="Logo">
                 </a>
@@ -19,11 +21,35 @@
                 <a href="./Index.html">Bebidas</a>
             </nav>
             <div class="user">
-                <img src="./images/profile.png" alt="">
-                <img src="./images/shop.png" alt="">
+                <img src="./images/profile.png" alt="Perfil" class="desktop">
+                <img src="./images/shop.png" alt="Carrinho">
             </div>
         </div>
     </header>
+
+    <nav id="sidebar" class="sidebar">
+        <ul>
+            <div>
+                <a href="">
+                    <li>Mercado</li>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <li>Refeições</li>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <li>Bebidas</li>
+                </a>
+            </div>
+        </ul>
+        <div>
+            <button id="register">Cadastrar-se</button>
+            <button id="login">Login</button>
+        </div>
+    </nav>
 
     <main>
         <h1>Ola</h1>
