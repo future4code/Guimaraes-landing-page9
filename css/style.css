@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -11,14 +12,24 @@
 }
 
 body {
-    min-height: 200vh;
+    margin-top: 108px;
 }
+
+@media (max-width: 768px) {
+    body {
+        margin-top: 80px;
+    }
+}
+
+
 
 /* HEADER */
 header {
     width: 100%;
     position: fixed;
+    top: 0;
     background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 header .max-width {
@@ -78,6 +89,10 @@ header nav a:hover {
     display: none;
 }
 
+#sidebar {
+    display: none;
+}
+
 @media (max-width: 1000px) {
     header nav a {
         font-size: 19px;
@@ -85,6 +100,10 @@ header nav a:hover {
 }
 
 @media (max-width: 768px) {
+    header {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
     header .max-width {
         height: 80px;
     }
@@ -114,7 +133,6 @@ header nav a:hover {
         position: fixed;
         height: calc(100vh - 80px);
         background-color: #fdfdfd;
-        margin-top: 80px;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -199,8 +217,58 @@ header nav a:hover {
 
 
 
-/* MAIN */
-main {
-    padding-top: 138px;
+/* SLIDES */
+.slider {
+    width: 100vw;
+    height: 45vh;
+    overflow: hidden;
 }
-/* MAIN */
+.slider--width {
+    height: 100%;
+    display: flex;
+    transition: all ease 0.3s;
+}
+.slider--item {
+    width: 100vw;
+    height: inherit;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    text-shadow: 0px 1px 1px #333;
+    font-size: 50px;
+}
+.slider--controls {
+    position: absolute;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.slider--control {
+    width: 50px;
+    height: 50px;
+    background-color: #FFF;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#left {
+    margin-left: 20px;
+}
+
+#right {
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+    .slider {
+        display: none;
+    }
+}
+
+
+/* SLIDES */
