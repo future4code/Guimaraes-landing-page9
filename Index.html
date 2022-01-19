@@ -2,68 +2,112 @@
 <html lang="pt_br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>4Food</title>
+    <title>4 food</title>
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
     <header>
-        <nav>
-
-        </nav>
+        <div class="max-width">
+            <nav>
+                <a href="./Index.html">
+                    <img src="./images/logo.png" alt="Logo">
+                </a>
+                <a href="./Index.html">Mercado</a>
+                <a href="./Index.html">Refeições</a>
+                <a href="./Index.html">Bebidas</a>
+            </nav>
+            <div class="user">
+                <img src="./images/profile.png" alt="">
+                <img src="./images/shop.png" alt="">
+            </div>
+        </div>
     </header>
 
-    <main>
-        <h1>Ola</h1>
-    </main>
+
+
+    <div class="header"></div>
+        <div class="slider">
+            <div class="slider--controls">
+                <div class="slider--control" onclick="goPrev()"><img src="images/voltar.png" alt="Proximo" width="50"></div>
+                <div class="slider--control" onclick="goNext()"><img src="images/proximo.png" alt="Proximo" width="50"></div>
+            </div>
+            <div class="slider--width">
+                <div class="slider--item" style="background-image: url('images/img1.jpg');">
+        
+                </div>
+                <div class="slider--item" style="background-image: url('images/img2.jpg');">
+                   
+                </div>
+                <div class="slider--item" style="background-image: url('images/img3.jfif');">
+                    
+                </div>
+
+                <div class="slider--item" style="background-image: url('images/img4.jfif');">
+            
+                </div>
+                <div class="slider--item" style="background-image: url('images/img5.jfif');">
+                
+                </div>
+                <div class="slider--item" style="background-image: url('images/img6.jfif');">
+                    
+                </div>
+            </div>
+        </div>
+    <section>
+        <h1>Resto do site</h1>
+    </section>
+
+
 
     <footer>
-        <section class="cidades">
-            <h3 class="title-coma"> Coma bem em </h3>
-            <ul class="cities">
-                <li class="sp"><a href="https://pt.wikipedia.org/wiki/S%C3%A3o_Paulo">São Paulo</a> </li>
-                <li class="rj"><a href="https://pt.wikipedia.org/wiki/Rio_de_Janeiro">Rio de Janeiro</a> </li>
-                <li class="bh"><a href="https://pt.wikipedia.org/wiki/Belo_Horizonte">Belo Horizonte</a> </li>
-                <li class="fo"><a href="https://pt.wikipedia.org/wiki/Fortaleza">Fortaleza</a> </li>
-                <li class="co"><a href="https://pt.wikipedia.org/wiki/Curitiba">Curitiba</a> </li>
+        <div class="footer-content">
+            <section class="cidades">
+                <h3 class="title-coma"> Coma bem em </h3>
+                <ul class="cities">
+                    <li class="sp"><a href="https://pt.wikipedia.org/wiki/S%C3%A3o_Paulo">São Paulo</a> </li>
+                    <li class="rj"><a href="https://pt.wikipedia.org/wiki/Rio_de_Janeiro">Rio de Janeiro</a> </li>
+                    <li class="bh"><a href="https://pt.wikipedia.org/wiki/Belo_Horizonte">Belo Horizonte</a> </li>
+                    <li class="fo"><a href="https://pt.wikipedia.org/wiki/Fortaleza">Fortaleza</a> </li>
+                    <li class="co"><a href="https://pt.wikipedia.org/wiki/Curitiba">Curitiba</a> </li>
+                    </ul>
+            </section>
+            <section class="Food">
+            <div class="food-container">
+                <h3 class="title-4food">4 food</h3>
+                <ul class="about">
+                    <li class="restaurantes"><a target="_blank" href="http://https://exame.com/casual/os-17-melhores-restaurantes-do-brasil-com-pratos-a-partir-de-17-reais/#:~:text=Entre%20os%20restaurantes%20brasileiros%2C%20além,%2C%20e%20Corrutela%20(90º)."> Melhores restaurantes </a></li>
+                    <li class="pratos"><a target="_blank" href="https://viagemegastronomia.cnnbrasil.com.br/gastronomia/as-50-melhores-comidas-do-mundo/"> Melhores pratos </a></li>
+                    <li class="hamburger"><a target="_blank" href="https://www.dopaoaocaviar.com.br/as-10-melhores-hamburguerias-de-sao-paulo/"> Hamburguers de qualidade </a></li>
+                    <li class="limpeza"><a target="_blank" href="https://www.tuacasa.com.br/produtos-de-limpeza/"> Para limpar sua casa </a></li>
+                    <li class="chocolate"><a target="_blank" href="https://www.egali.com.br/blog/os-melhores-chocolates-do-mundo/"> Chocolate é sempre bom </a></li>
                 </ul>
-        </section>
-        <section class="Food">
-        <div class="food-container">
-            <h3 class="title-4food">4 food</h3>
-            <ul class="about">
-                <li class="restaurantes"><a target="_blank" href="http://https://exame.com/casual/os-17-melhores-restaurantes-do-brasil-com-pratos-a-partir-de-17-reais/#:~:text=Entre%20os%20restaurantes%20brasileiros%2C%20além,%2C%20e%20Corrutela%20(90º)."> Melhores restaurantes </a></li>
-                <li class="pratos"><a target="_blank" href="https://viagemegastronomia.cnnbrasil.com.br/gastronomia/as-50-melhores-comidas-do-mundo/"> Melhores pratos </a></li>
-                <li class="hamburger"><a target="_blank" href="https://www.dopaoaocaviar.com.br/as-10-melhores-hamburguerias-de-sao-paulo/"> Hamburguers de qualidade </a></li>
-                <li class="limpeza"><a target="_blank" href="https://www.tuacasa.com.br/produtos-de-limpeza/"> Para limpar sua casa </a></li>
-                <li class="chocolate"><a target="_blank" href="https://www.egali.com.br/blog/os-melhores-chocolates-do-mundo/"> Chocolate é sempre bom </a></li>
-            </ul>
-        </div>
-        <div class="descubra">
-            <h3 class="title-descubra"> Descubra </h3>
-            <ul class="found">
-                <li class="o-que"><a target="_blank" href="https://www.pensador.com/somos_o_que_pensamos/#:~:text=N%C3%B3s%20somos%20o%20que%20sentimos,..%20e%20como%20pessoas%20mudamos."> O que é 4Food? </a></li>
-                <li class="quem-somos"><a target="_blank" href=""> Quem somos? </a></li>
-                <li class="cadastre"><a target="_blank" href="/formulario.html"> Cadastre-se </a></li>
-            </ul>
-        </div>
-        <div class="redes">
-            <h3 class="title-redes"> Redes sociais </h3>
-            <ul class="socials">
-                <li class="facebook"><a target="_blank" href="https://www.facebook.com/"> <img src="imagens/footer/facebooklogo.png" alt="facebook"> </a> </li>
-                <li class="instagram"><a target="_blank" href="https://www.instagram.com/"> <img src="imagens/footer/instagram.png" alt="instagram"> </a> </li>
-                <li class="youtube"><a target="_blank" href="https://www.youtube.com/channel/UC-l-ywJWVXlm2I-0u0Z5yQg"> <img src="imagens/footer/youtube.png" alt="youtube"> </a> </li>
-                <li class="twitter"><a target="_blank" href="https://twitter.com/"> <img src="imagens/footer/twitter.png" alt="twitter"> </a> </li>
-                <li class="linkedin"><a target="_blank" href="https://www.linkedin.com/"> <img src="imagens/footer/linkedin.png" alt="linkedin"> </a> </li>
-                <liv class="whatsapp"><a target="_blank" href="https://www.whatsapp.com/"> <img src="imagens/footer/whatsapp.jpg" alt="whatsapp"> </a> </li>
+            </div>
+            <div class="descubra">
+                <h3 class="title-descubra"> Descubra </h3>
+                <ul class="found">
+                    <li class="o-que"><a target="_blank" href="https://www.pensador.com/somos_o_que_pensamos/#:~:text=N%C3%B3s%20somos%20o%20que%20sentimos,..%20e%20como%20pessoas%20mudamos."> O que é 4Food? </a></li>
+                    <li class="quem-somos"><a target="_blank" href=""> Quem somos? </a></li>
+                    <li class="cadastre"><a target="_blank" href="/formulario.html"> Cadastre-se </a></li>
                 </ul>
+            </div>
+            <div class="redes">
+                <h3 class="title-redes"> Redes sociais </h3>
+                <ul class="socials">
+                    <li class="facebook"><a target="_blank" href="https://www.facebook.com/"> <img src="imagens/footer/facebooklogo.png" alt="facebook"> </a> </li>
+                    <li class="instagram"><a target="_blank" href="https://www.instagram.com/"> <img src="imagens/footer/instagram.png" alt="instagram"> </a> </li>
+                    <li class="youtube"><a target="_blank" href="https://www.youtube.com/channel/UC-l-ywJWVXlm2I-0u0Z5yQg"> <img src="imagens/footer/youtube.png" alt="youtube"> </a> </li>
+                    <li class="twitter"><a target="_blank" href="https://twitter.com/"> <img src="imagens/footer/twitter.png" alt="twitter"> </a> </li>
+                    <li class="linkedin"><a target="_blank" href="https://www.linkedin.com/"> <img src="imagens/footer/linkedin.png" alt="linkedin"> </a> </li>
+                    <liv class="whatsapp"><a target="_blank" href="https://www.whatsapp.com/"> <img src="imagens/footer/whatsapp.jpg" alt="whatsapp"> </a> </li>
+                    </ul>
+            </div>
+            </section>
+            <section class="Copyright">
+                <p>Copyright © 4Food 2022. Todos os direitos reservados.</p>
+                <p>Av. Brig. Faria Lima, 3477 - Itaim Bibi, São Paulo - SP</p>
+            </section>
         </div>
-        </section>
-        <section class="Copyright">
-            <p>Copyright © 4Food 2022. Todos os direitos reservados.</p>
-            <p>Av. Brig. Faria Lima, 3477 - Itaim Bibi, São Paulo - SP</p>
-        </section>
     </footer>
 
     <script src="script.js/script.js"></script>

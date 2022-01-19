@@ -1,11 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400;600;800&display=swap');
+
 *{
-    max-width: 1280px;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --brown: #603822;
+    --brown-hover: #a57155;
+}
+
+body {
+    min-height: 200vh;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    position: fixed;
+    background-color: white;
+}
+
+header .max-width {
+    max-width: 1280px;
+    height: 138px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+header nav img {
+    height: 100px; 
+}
+
+header nav img:hover {
+    filter: brightness(107%);
+    transition: filter 0.25s;
+}
+
+header nav a {
+    text-decoration: none;
+    font-family: 'Ruda', sans-serif;
+    color: var(--brown);
+    font-size: 22px;
+    margin-right: 45px;
+}
+
+header nav a:hover {
+    color: var(--brown-hover);
+    transition: color 0.25s;
+}
+
+.user {
+    display: flex;
+}
+
+.user img {
+    width: 40px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.user img:hover {
+    filter: brightness(117%);
+    transition: filter 0.25s;
+}
+/* HEADER */
+
+
+
+/* MAIN */
+main {
+    padding-top: 138px;
     background-color: rosybrown;
 }
 /* footer */
-footer{
+footer {
+    background-color: #f5f5f5;
+}
+
+.footer-content {
     background-color: #f5f5f5;
     padding: 20px;
     text-align: center;
@@ -14,6 +96,8 @@ footer{
     grid-area: footer;
     grid-template-columns: auto auto auto;
     background-image: solid #fff;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 .Food {
     background-color: #f5f5f5;
@@ -443,4 +527,45 @@ footer{
     text-decoration: none;
     min-width: auto;
     max-width: auto;
+}
+
+.header {
+    height: 138px;
+}
+.slider {
+    width: 100vw;
+    height: 400px;
+    overflow: hidden;
+}
+.slider--width {
+    height: 100%;
+    display: flex;
+    transition: all ease 0.3s;
+}
+.slider--item {
+    width: 100vw;
+    height: inherit;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    text-shadow: 0px 1px 1px #333;
+    font-size: 50px;
+}
+.slider--controls {
+    position: absolute;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.slider--control {
+    width: 50px;
+    height: 50px;
+    background-color: #FFF;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
 }
