@@ -13,6 +13,7 @@
 
 body {
     margin-top: 108px;
+    overflow-x: hidden;
 }
 
 @media (max-width: 768px) {
@@ -256,7 +257,7 @@ header nav a:hover {
 }
 
 #right {
-    margin-right: 20px;
+    margin-right: 35px;
 }
 
 @media (max-width: 800px) {
