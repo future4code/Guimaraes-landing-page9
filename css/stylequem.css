@@ -335,6 +335,44 @@ header nav a:hover {
     text-align: center;
     margin-left: 2rem;
 }
+.imagens-git {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -2rem;
+}
+.github1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 10rem;
+    margin-top: 1rem;
+}
+.github2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-left: 2rem;
+    margin-right: 7rem;
+    margin-top: 1rem;
+}
+.github3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 40px;
+    height: 40px;
+    margin-left: 2rem;
+}
 
 /* FOOTER */
 footer {
@@ -1230,4 +1268,101 @@ footer {
         max-width: auto;
     }
 }
-/* FOOTER */
+/* QUEM SOMOS */
+.titulo-geral {
+    font-size: 9.433962264150944vh;
+    font-weight: bold;
+    color: var(--brown);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.titulo-sub {
+    font-size: 5.555555555555555vh;
+    font-weight: bold;
+    color: var(--brown);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.pessoas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.titulo3 {
+    font-size: 5.555555555555555vh;
+    font-weight: bold;
+    color: var(--brown);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.nomes-pessoas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+.nome1 {
+    font-size: 3.3333333333333335vh;
+    font-weight: bold;
+    color: var(--brown);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.nome2 {
+    font-size: 3.3333333333333335vh;
+    font-weight: bold;
+    color: var(--brown);
+    margin-bottom: 2rem;
+    text-align: center;
+    margin-left: 2rem;
+}
+.nome3 {
+    font-size: 3.3333333333333335vh;
+    font-weight: bold;
+    color: var(--brown);
+    margin-bottom: 2rem;
+    text-align: center;
+    margin-left: 2rem;
+}
+.imagens-git {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -2rem;
+}
+.github1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.github2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-left: 4rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
+.github3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 40px;
+    height: 40px;
+    margin-left: 3rem;
+}
