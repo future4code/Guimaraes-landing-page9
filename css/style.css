@@ -95,7 +95,26 @@ header nav a:hover {
     display: none;
 }
 
+#home-wallpaper {
+    display: none;
+}
+
+#home-wallpaper img {
+    filter: brightness(1000%);
+    width: 20vh;
+    z-index: 0;
+}
+
 @media (max-width: 800px) {
+    #home-wallpaper { 
+        width: 100%;
+        background-color: var(--brown);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
     header {
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
@@ -134,6 +153,7 @@ header nav a:hover {
         flex-direction: column;
         justify-content: space-between;
         transition: transform 0.5s;
+        z-index: 2;
     }
 
     .sidebar {
