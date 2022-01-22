@@ -1,3 +1,15 @@
+/* HEADER */
+const navButton = document.getElementById('mobile-nav')
+const sidebar = document.getElementById('sidebar')
+
+navButton.addEventListener('click', () => {
+    sidebar.classList.toggle('sidebar-active')
+})
+/* HEADER */
+
+
+
+/* SLIDES */
 let totalSlides = document.querySelectorAll('.slider--item').length;
 let currentSlide = 0;
 
@@ -34,3 +46,4 @@ function updateMargin() {
 }
 
 setInterval(goNext, 3000);
+/* SLIDES */

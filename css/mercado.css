@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400;600;800&display=swap');
+
+body {
+    font-family: 'Ruda';
+}
+
+:root {
+    --brown: #603822;
+    --brown-hover: #a57155;
+}
+
+#wallpaper {
+    width: 100%;
+    background-color: var(--brown);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+#wallpaper img {
+    filter: brightness(1000%);
+    width: 20vh;
+}
+
+main {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 5vh;
+}
+
+h1, h2, h3 {
+    color: var(--brown);
+}
+
+h2 {
+    margin: 20px;
+}
+
+.products {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productContainer {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.productCard {
+    flex: 1 1 260px;
+    margin: 15px;
+
+    max-width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    background-color: #F9F9F9;
+}
+
+.productCard div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 15px 15px 15px;
+    width: 100%;
+}
+
+.productCard div > * {
+    margin-top: 10px;
+}
+
+.productCard picture {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.productCard img {
+    width: 175px;
+    height: 175px;
+    padding: 15px;
+}
+
+.productCard button {
+    font-size: 14px;
+    cursor: pointer;
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    font-family: 'Ruda';
+    border: 2px solid var(--brown);
+    color: white;
+    background-color: var(--brown);
+    transition: color 0.33s;
+}
+
+.productCard button:hover {
+    border: 2px solid var(--brown);
+    color: var(--brown);
+    background-color: #F9F9F9;
+    transition: background-color 0.33s;
+}
