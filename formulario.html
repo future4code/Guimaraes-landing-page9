@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+        <title>Cadastro</title>
+    </head>
+
+    <body>  
+
+        <div>
+            <h1 id="titulo">Cadastro de Empresas</h1>
+            <p id="subtitulo">Complete suas informações</p>
+            <br>
+        </div>
+
+        <form>
+
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="sobrenome"><strong>Razão social</strong></label>
+                    <input type="text" name="razao" id="razao" required>
+                </div>
+            </fieldset> 
+
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="campo">
+                <label><strong>O que você vende</strong></label>
+                <label>
+                    <input type="radio" name="vende" value="mercado" checked> Mercado
+                </label>
+                <label>
+                    <input type="radio" name="vende" value="bebidas"> Bebidas
+                </label>
+                <label>
+                    <input type="radio" name="vende" value="restaurante"> Restaurante
+                </label>
+            </div>
+
+            <div class="campo">
+                <label for="outro-app"><strong> Utiliza outra plataforma? </strong></label>
+                <select id="outro-app" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Sim</option>
+                  <option>Não</option>
+                </select>
+            </div>
+
+            <fieldset class="grupo">
+                
+                <div id="check">
+                    <label><strong>Se sim, qual/quais?</strong></label><br><br>
+                    <input type="checkbox" id="plataforma1" name="plataforma1" value="Ifood">
+                    <label for="plataforma1"> Ifood </label>
+                    <input type="checkbox" id="plataforma2" name="plataforma2" value="Rappi">
+                    <label for="plataforma2"> Rappi </label>
+                    <input type="checkbox" id="plataforma3" name="plataforma3" value="99Food">
+                    <label for="plataforma3"> 99Food </label>
+                    <input type="checkbox" id="plataforma4" name="plataforma4" value="eats">
+                    <label for="plataforma4"> Uber eats </label>
+                    <input type="checkbox" id="plataforma5" name="plataforma5" value="Appetit">
+                    <label for="plataforma5"> Appetit </label>
+                    <input type="checkbox" id="plataforma6" name="plataforma6" value="Propria">
+                    <label for="plataforma6"> Própria </label>
+                    <input type="checkbox" id="plataforma7" name="plataforma7" value="Outra">
+                    <label for="plataforma7"> Outra </label>
+                </div>
+            </fieldset>
+
+            <div class="campo">
+                <br>
+                <label for="experiencia"><strong>Conte um pouco sobre sua empresa: </strong></label>
+                <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+            </div>
+
+            <button class="botao" type="submit" onsubmit="">Concluído</button>            
+
+        </form>
+    </body>
+
+</html>
